@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import GridContainer from "./grid-container"
+import "./index.css"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main className='bg-zinc-800  min-h-screen w-full'>
+      <div className='max-w-[1200px] mx-auto flex flex-col justify-center items-center p-2'>
+        <h1 className='text-3xl'>Hello Wolrd ;)</h1>
+        <GridContainer />
+      </div>
+    </main>
+  )
 }
 
-export default App;
+export default App
